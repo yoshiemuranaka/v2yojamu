@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+strong {
+  font-weight: bold; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+/* For iPhone - Mobile Safari automatically scales text if it thinks the text will render too small */
+body {
+  -webkit-text-size-adjust: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* apply a natural box layout model to all elements*/
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ (after Paul Irish)*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  color: #5D5D5D;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, p {
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  letter-spacing: 0.01em;
+  line-height: 1.35em; }
+
+.call-out--large {
+  font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 0; }
+
+.call-out--small {
+  font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 1.15em;
+  font-weight: bold;
+  line-height: 0; }
+
+.no-wrap {
+  white-space: nowrap; }
+
+/*# sourceMappingURL=main.css.map */

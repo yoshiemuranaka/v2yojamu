@@ -1,0 +1,41 @@
+body {
+	background: $body;
+	color: $default-font;
+	font-size: 16px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+	text-rendering: optimizeLegibility;
+}
+
+// h1 {
+// 	font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+// 	letter-spacing: -0.02em;
+// 	font-size: 3.5em;
+// 	font-weight: bold;
+// }
+
+h1 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	letter-spacing: 0.01em;
+	line-height: 1.35em;
+}
+
+.call-out--large {
+	font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+	letter-spacing: -0.02em;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 0;
+}
+
+.call-out--small {
+	font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+	letter-spacing: -0.02em;
+	font-size: 1.15em;
+	font-weight: bold;
+	line-height: 0;
+}
