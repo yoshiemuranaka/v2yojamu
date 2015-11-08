@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain) */
@@ -49,25 +48,33 @@ table {
   box-sizing: border-box; }
 
 body {
-  background: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100%;
   color: #5D5D5D;
-  font-size: 16px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  background: #fff; }
+  @media only screen and (min-width: 43.75em) {
+    body {
+      font-size: 125%; } }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   text-rendering: optimizeLegibility; }
 
 h1 {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
   font-weight: 300;
-  font-size: 2.5em;
-  letter-spacing: 0.01em;
-  line-height: 1.35em; }
+  line-height: 1.35em;
+  letter-spacing: .01em; }
 
-h2, h3 {
+h2,
+h3 {
   font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-  letter-spacing: -0.02em;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: -.02em; }
 
 h2 {
   font-size: 2.5em; }
@@ -77,30 +84,91 @@ h3 {
 
 p {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
   font-size: 1em;
-  letter-spacing: 0.01em;
-  line-height: 1.15em; }
+  font-weight: 300;
+  line-height: 1.15em;
+  margin-bottom: .65em;
+  letter-spacing: .01em; }
 
 .call-out--large {
   font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-  letter-spacing: -0.02em;
   font-size: 1.5em;
   font-weight: bold;
-  line-height: 0; }
+  line-height: 0;
+  letter-spacing: -.02em; }
 
 .call-out--small {
   font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-  letter-spacing: -0.02em;
   font-size: 1.15em;
   font-weight: bold;
-  line-height: 0; }
+  line-height: 0;
+  letter-spacing: -.02em; }
 
 .no-wrap {
   white-space: nowrap; }
 
+.light {
+  color: #333333; }
+
+.lighter {
+  color: #4D4D4D; }
+
+.lightest {
+  color: #666666; }
+
+.main-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-right: 3%;
+  padding-bottom: 140px;
+  padding-left: 3%;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center; }
+  @media only screen and (max-height: 40em) {
+    .main-content {
+      padding-bottom: 50px; } }
+
+.center {
+  overflow: scroll;
+  max-width: 600px;
+  margin: 0 auto; }
+
 .footer {
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  text-align: center;
+  color: #fff;
   background: #4D4D4D;
-  color: #fff; }
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center; }
+  @media only screen and (max-height: 40em) {
+    .footer {
+      height: 50px; } }
 
 /*# sourceMappingURL=main.css.map */

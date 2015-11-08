@@ -1,0 +1,16 @@
+@mixin flexbox($direction, $justify) {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+ 	flex-direction: $direction;
+  
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+}

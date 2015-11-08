@@ -1,56 +1,90 @@
-body {
-	background: $body;
-	color: $default-font;
-	font-size: 16px;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+
+    color: $default-font;
+    background: $body;
+
+    @include mq(medium) {
+        font-size: 125%;
+    }
 }
 
-h1, h2, h3, h4, p {
-	text-rendering: optimizeLegibility;
+
+
+h1,
+h2,
+h3,
+h4,
+p
+{
+    text-rendering: optimizeLegibility;
 }
 
-h1 {
-	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	font-size: 2.5em;
-	letter-spacing: 0.01em;
-	line-height: 1.35em;
+
+h1
+{
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.35em;
+
+    letter-spacing: .01em;
+
+    // @include mq(medium) {
+    //     font-size: 2.5em;
+    // }
 }
 
-h2, h3 {
-	font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-	letter-spacing: -0.02em;
-	font-weight: bold;
+
+h2,
+h3
+{
+    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+
+    letter-spacing: -.02em;
 }
 
-h2 {
-	font-size: 2.5em;
+h2
+{
+    font-size: 2.5em;
 }
 
-h3 {
-	font-size: 2em;
+h3
+{
+    font-size: 2em;
 }
 
-p {
-	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	font-size: 1em;
-	letter-spacing: 0.01em;
-	line-height: 1.15em;
+p
+{
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.15em;
+
+    margin-bottom: .65em;
+
+    letter-spacing: .01em;
 }
 
-.call-out--large {
-	font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-	letter-spacing: -0.02em;
-	font-size: 1.5em;
-	font-weight: bold;
-	line-height: 0;
+.call-out--large
+{
+    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 0;
+
+    letter-spacing: -.02em;
 }
 
-.call-out--small {
-	font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-	letter-spacing: -0.02em;
-	font-size: 1.15em;
-	font-weight: bold;
-	line-height: 0;
+.call-out--small
+{
+    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+    font-size: 1.15em;
+    font-weight: bold;
+    line-height: 0;
+
+    letter-spacing: -.02em;
 }
