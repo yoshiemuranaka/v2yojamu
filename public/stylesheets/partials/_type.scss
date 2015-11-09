@@ -1,0 +1,89 @@
+h1,
+h2,
+h3,
+h4,
+p
+{
+    text-rendering: optimizeLegibility;
+}
+
+
+h1
+{
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.35em;
+
+    letter-spacing: .01em;
+
+}
+
+
+h2,
+h3
+{
+    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+
+    letter-spacing: -.02em;
+}
+
+h2
+{
+    font-size: 2.5em;
+}
+
+h3
+{
+    font-size: 2em;
+}
+
+p
+{
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.15em;
+
+    margin-bottom: .65em;
+
+    letter-spacing: .01em;
+}
+
+.call-out--large
+{
+    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 0;
+
+    letter-spacing: -.02em;
+
+    @include mq(medium) {
+        font-size: 1.5em;
+    }
+}
+
+.call-out--small
+{
+    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 0;
+
+    letter-spacing: -.02em;
+
+    @include mq(medium) {
+        font-size: 1.15em;
+    }
+}
+
+.accent {
+    @include transition(color, 0.2s);
+
+    &:hover {
+        color: $accent;
+        cursor: pointer;
+    }
+}

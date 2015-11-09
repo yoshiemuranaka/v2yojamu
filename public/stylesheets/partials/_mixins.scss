@@ -1,16 +1,33 @@
-@mixin flexbox($direction, $justify) {
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+@mixin flexbox($direction, $justify)
+{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 
-  -webkit-flex-direction: $direction;
-  -moz-flex-direction: $direction;
-  -ms-flex-direction: $direction;
- 	flex-direction: $direction;
-  
-  -webkit-justify-content: $justify;
-  -moz-justify-content: $justify;
-  -ms-justify-content: $justify;
-  justify-content: $justify;
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+    
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+}
+
+@mixin gradient()
+{
+    background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
+    background:    -moz-linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
+    background:     -ms-linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
+    background:         linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
+}
+
+@mixin transition($value, $speed)
+{
+    -webkit-transition: $value $speed;
+       -moz-transition: $value $speed;
+        -ms-transition: $value $speed;
+            transition: $value $speed;
 }

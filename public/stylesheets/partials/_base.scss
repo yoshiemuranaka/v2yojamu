@@ -11,80 +11,69 @@ body
     }
 }
 
-
-
-h1,
-h2,
-h3,
-h4,
-p
+.main-content
 {
-    text-rendering: optimizeLegibility;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding-right: 3%;
+    padding-bottom: 140px;
+    padding-left: 3%;
+
+    @include flexbox(column, center);
+    @include mq(short)
+    {
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+}
+
+//I want to include this on touch device only
+// .main-content:after
+// {
+//     position: absolute;
+//     z-index: 10;
+//     top: 0;
+
+//     width: 100%;
+//     height: 200px;
+
+//     content: '';
+
+//     @include gradient();
+// }
+
+.center
+{
+    overflow: auto;
+
+    max-width: 600px;
+    margin: 0 auto;
+
+    @include transition(font-size, .4s);
+
+}
+
+.slide {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.js-animate {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.slide.active .js-animate {
+    opacity: 1;
+    transform: translateY(0);
+
+    -webkit-transition: opacity 1.25s, transform 1.25s;
+
+
 }
 
 
-h1
-{
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    font-weight: 300;
-    line-height: 1.35em;
-
-    letter-spacing: .01em;
-
-    // @include mq(medium) {
-    //     font-size: 2.5em;
-    // }
-}
-
-
-h2,
-h3
-{
-    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-
-    letter-spacing: -.02em;
-}
-
-h2
-{
-    font-size: 2.5em;
-}
-
-h3
-{
-    font-size: 2em;
-}
-
-p
-{
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.15em;
-
-    margin-bottom: .65em;
-
-    letter-spacing: .01em;
-}
-
-.call-out--large
-{
-    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 0;
-
-    letter-spacing: -.02em;
-}
-
-.call-out--small
-{
-    font-family: 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
-    font-size: 1.15em;
-    font-weight: bold;
-    line-height: 0;
-
-    letter-spacing: -.02em;
-}
