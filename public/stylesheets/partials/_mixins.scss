@@ -18,10 +18,10 @@
 
 @mixin gradient()
 {
-    background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
-    background:    -moz-linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
-    background:     -ms-linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
-    background:         linear-gradient(to top, rgba(255, 255, 255, 0) 40%, white 85%);
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 85%);
+    background:    -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 85%);
+    background:     -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 85%);
+    background:         linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 85%);
 }
 
 @mixin transition($value, $speed)

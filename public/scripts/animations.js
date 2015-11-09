@@ -3,26 +3,15 @@ $(document).ready(function(){
 	Slide = {
 
 		config: {
-			current: 1,
-			animate: $('.js-animate')
+			current: 1
 		},
 
 		init: function() {
-			Slide.animateIn();
-			Slide.events();
+			Slide.animateIn(Slide.config.current);
 		},
 
-		events: function() {
-			$('.center').scroll(function(){console.log('yo')})
-		},
-
-		animateIn: function() {
-			$(".about").delay(300).addClass('active');
-			$(".contact").css({"display": "none"});
-		},
-
-		changeSlide: function() {
-			console.log('change slide')
+		animateIn: function(newSlide) {
+			$('[data-slide=' + newSlide + ']').addClass('active');
 		}
 	
 	};

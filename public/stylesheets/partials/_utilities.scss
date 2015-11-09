@@ -1,15 +1,30 @@
-.no-wrap {
-  white-space: nowrap;
+.no-wrap
+{
+    white-space: nowrap;
 }
 
-.light {
-	color: $grey-1;
+.light
+{
+    color: $grey-1;
 }
 
-.lighter {
-	color: $grey-2;
+.lighter
+{
+    color: $grey-2;
 }
 
-.lightest {
-	color: $grey-3;
+.lightest
+{
+    color: $grey-3;
+}
+
+.accent
+{
+    font-weight: bold;
+
+    color: $accent;
+    &:hover
+    {
+        border-bottom: 2px solid $accent;
+    }
 }

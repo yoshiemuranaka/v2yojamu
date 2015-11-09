@@ -10,14 +10,16 @@
 
     text-align: center;
 
-    color: $white;
+    color: $default-font;
     background: $footer;
 
     @include flexbox(column, center);
     @include mq(short)
     {
-        font-size: 14px;
-
-        height: 70px;
+        height: 90px;
     }
+}
+
+.footer-content p:last-child {
+    margin-bottom: 0;
 }

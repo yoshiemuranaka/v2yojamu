@@ -6,7 +6,8 @@ body
     color: $default-font;
     background: $body;
 
-    @include mq(medium) {
+    @include mq(medium)
+    {
         font-size: 125%;
     }
 }
@@ -27,24 +28,25 @@ body
     @include mq(short)
     {
         padding-top: 25px;
-        padding-bottom: 75px;
+        padding-bottom: 70px;
     }
 }
 
-//I want to include this on touch device only
-// .main-content:after
-// {
-//     position: absolute;
-//     z-index: 10;
-//     top: 0;
+@include mq(short) {
+    .main-content:after {   
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
 
-//     width: 100%;
-//     height: 200px;
+        width: 100%;
+        height: 200px;
 
-//     content: '';
+        content: '';
 
-//     @include gradient();
-// }
+        @include gradient();
+    }
+}
+
 
 .center
 {
@@ -53,27 +55,26 @@ body
     max-width: 600px;
     margin: 0 auto;
 
-    @include transition(font-size, .4s);
-
+    @include transition(font-size, .2s);
 }
 
-.slide {
+.slide
+{
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-.js-animate {
+.js-animate
+{
+    transform: translateY(40px);
+
     opacity: 0;
-    transform: translateY(20px);
 }
 
-.slide.active .js-animate {
-    opacity: 1;
+.slide.active .js-animate
+{
+    -webkit-transition: opacity 1.5s ease, transform 1.5s ease;
     transform: translateY(0);
 
-    -webkit-transition: opacity 1.25s, transform 1.25s;
-
-
+    opacity: 1;
 }
-
-
